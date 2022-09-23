@@ -1,23 +1,23 @@
 .header{
-    // background-color: $olive-background;
-    // padding-top: 12px;
+    background-color: $olive-background;
+    padding-top: 12px;
     // padding-bottom: 12px;
-    position: absolute;
+    // position: absolute;
 
 }
-.header__logo{
-    width: 40px;
-    height: 37px;
+// .header__logo{
+//     width: 40px;
+//     height: 37px;
     
-    @media screen and (min-width: 768px) {
-        width: 48px;
-        height: 44px;
-    }
-    @media screen and (min-width: 1200px) {
-        width: 60px;
-        height: 65px;
-    }
-}
+//     @media screen and (min-width: 768px) {
+//         width: 48px;
+//         height: 44px;
+//     }
+//     @media screen and (min-width: 1200px) {
+//         width: 60px;
+//         height: 65px;
+//     }
+// }
 .wrap{
     display: flex;
     align-items: center;

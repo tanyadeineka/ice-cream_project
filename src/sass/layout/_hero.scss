@@ -1,6 +1,41 @@
 .hero{
+    padding-top: 61px;
     max-width: 1600px;
-    height: 502px;
+    height: 450px;
     margin: 0 auto;
     background-color: $olive-background;
+    background-image: url(../images/hero-dots-mob.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+.hero__position{
+    width: 247px;
+}
+.hero__title{
+    font-family: 'Seymour One', sans-serif;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.hero__word{
+    font-size: 34px;
+    line-height: 0.96;
+}
+.hero__list{
+    display: flex;
+}
+.hero__item:not(:last-child){
+
+}
+.hero__link{
+
+}
+.hero__link--noborder{
+    
+}
+.hero__ice{
+    
+    
 }
