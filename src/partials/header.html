@@ -1,8 +1,46 @@
-<header>
-  <div class="container header">
-    <svg>
-      <use href="../images/icons.svg.svg#icon-Logo"></use>
-    </svg>
+<header class="header">
+  <div class="container">
+    <pictur class="header__logo">
+      <source
+        srcset="
+        ./images/logo-desk.png x1,
+        ./images/logo-desk-x2.png x2
+      "
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="
+        ./images/logo-tab.png x1,
+        ./images/logo-tab-x2.png x2
+      "
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="
+        ./images/logo-mob.png x1,
+        ./images/logo-mob-x2.png x2
+      "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="header__logo"
+        src="./images/logo-mob.png"
+        alt="логотип"
+        width="40"
+      />
+    </picture>
+              <button
+            type="button"
+            class="menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="16" aria-label="Переключатель мобильного меню">
+              <use class="mobile-open__icon" href=""></use>
+            </svg>
+          </button>
+
+
     <nav class="site-nav"></nav>
   </div>
 </header>
