@@ -32,7 +32,9 @@
     @media screen and (min-width: 768px) {
         margin-right: 32px;
     }
-    
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
 }
 .menu-container {
     padding-top: 12px;
@@ -62,6 +64,9 @@
         padding-left: 32px;
         padding-right: 32px;
         background-color: #97AF8D;
+    }
+    @media screen and (min-width: 1200px) {
+        display: none;
     }
 }   
     
@@ -119,6 +124,15 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1,21;
+        &:hover {
+            background-color: #0A8817;
+        }
+            
+        &:focus {
+            background-color: #0A8817;
+            color: #FCFCFC;
+        }
+        
     @media screen and (min-width: 768px) {
         display: none;
     }
@@ -143,6 +157,13 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
+        &:hover{
+            background-color: #0A8817;
+        }
+        &:focus{
+            background-color: #0A8817;
+            color: #FCFCFC;
+        }
     
     @media screen and (max-width: 767px) {
         display: none;
@@ -157,3 +178,27 @@
     fill: transparent;
     stroke: currentColor;
 }
+.header-nav{
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+.header-nav__list{
+    display: flex;
+    align-items: center;
+}
+.header-nav__item:not(:last-child){
+    margin-right: 27px;
+}
+.header-nav__link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+    color: $white;
+    text-decoration: none;
+        &:hover,
+        &:focus {
+            color: $yellow-primary;
+        }
+}
+
