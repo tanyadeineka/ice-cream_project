@@ -1,119 +1,235 @@
-.section {
+.products-section {
   max-width: 1200px;
   height: 1050px;
+  padding: 60 15;
   background-image: url(../images/4b-icecr-desk.jpg);
   background-size: cover;
   background-position: center;
 }
 
-.products {
-    padding: 60 15;
+.products-section__container {
+  outline: 2px solid red;
+  margin-bottom: 120px;
 }
 
-.products__lable {
-    font-weight: 800;
-        font-size: 30px;
-        line-height: 1.23;
-        text-align: center;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-    
-        color: $black;
+.products-section__lable {
+  margin-bottom: 12px;
+
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.products-section__title {
+  font-family: 'Seymour One';
+
+  font-size: 36px;
+  line-height: 1.25;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.products {
+  outline: 2px solid red;
+}
+
+.products_list {
+  display: flex;
+
+  outline: 2px solid rgb(24, 0, 241);
+}
+
+.products__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  outline: 2px solid rgb(241, 0, 161);
+}
+
+.products__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.products__img {
+  position: absolute;
+  top: 0;
+}
+
+.products__item:hover {
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 }
 
 .products__title {
-padding-bottom: 120px;
+  margin-top: 166px;
 
-    font-family: 'Seymour One';
-    font-size: 36px;
-        line-height: 1.25;
-           
-        text-align: center;
-        letter-spacing: 0.06em;
-        text-transform: uppercase;
-    
-        color: $black;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $black;
 }
 
-.product__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-    margin-top: 120px;
+.products__text {
+  padding: 60px;
+
+  font-size: 16px;
+  line-height: 1.76;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $black;
 }
 
-.product__item {
-
-    margin-bottom: 57px;
-    width: 370px;
-    height: 535px;
+.products__button {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding-bottom: 60px;
 }
 
-.product__thumb {
-position: relative;
-       
-        background: #AEC6A5;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-        border-radius: 24px;
-     outline: 2px solid red;
+.products__container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 166px;
+  background: #aec6a5;
+  border-radius: 24px;
 }
 
-.product__img {
-position: absolute;
-
-  top: -150px;
- 
-  background-color: rgba(33, 150, 243, 0.9);
-
-
-border-radius: 50%;
+.products__button-icon {
+  display: block;
+  height: 14px;
 }
 
-.product__list-title {
-padding-top: 220px;
+// .products {
+//   padding: 60 15;
+// }
 
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 1.23;
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+// .products__lable {
+//   font-weight: 800;
+//   font-size: 30px;
+//   line-height: 1.23;
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
 
-    color: $black;
-}
+//   color: $black;
+// }
 
-.product__list-text {
-    padding: 60px;
-    font-size: 16px;
-    line-height: 1.76;
-   
+// .products__title {
+//   padding-bottom: 120px;
 
-    text-align: center;
-    letter-spacing: 0.04em;
+//   font-family: 'Seymour One';
+//   font-size: 36px;
+//   line-height: 1.25;
 
-    color: $black;
-}
+//   text-align: center;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
 
-.product__button {
-    display: inline-flex;
+//   color: $black;
+// }
 
-    padding-top: 0;
-    padding-right: 165px;
-    padding-bottom: 60px;
-    padding-left: 165px;
+// .product__list {
+//   display: flex;
+//   flex-wrap: wrap;
 
-    background-color: inherit;
-    min-width: 40px;
-    border: none;
+//   position: relative;
+//   height: 100%;
+//   gap: 30px;
 
-}
+//   margin-top: 120px;
 
-.product__button-arrow {
-    display: inline-block;
-    font-family: inherit;
-    cursor: pointer;
-    text-align: center;
+//   outline: 2px solid green;
+// }
 
-    outline: none;
-}
+// .product__item {
+//   margin-bottom: 57px;
+//   width: 370px;
+//   height: 535px;
+
+//   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+//   border-radius: 24px;
+//   outline: 2px solid red;
+// }
+
+// .product__thumb {
+//   height: 535px;
+//   background: #aec6a5;
+// }
+
+// .ice-coffee {
+//   background: #e06d0e;
+// }
+
+// .product__img {
+//   width: 302px;
+
+//   position: absolute;
+
+//   top: 0;
+
+//   border-radius: 50%;
+// }
+
+// .product__list-title {
+//   padding-top: 160px;
+
+//   font-weight: 700;
+//   font-size: 30px;
+//   line-height: 1.23;
+//   text-align: center;
+//   letter-spacing: 0.04em;
+//   text-transform: uppercase;
+
+//   color: $black;
+// }
+
+// .product__list-text {
+//   padding: 60px;
+//   font-size: 16px;
+//   line-height: 1.76;
+
+//   text-align: center;
+//   letter-spacing: 0.04em;
+
+//   color: $black;
+// }
+
+// .arrow {
+//   display: flex;
+//   padding: 0;
+// }
+
+// .arrow__button {
+//   padding-top: 0;
+//   padding-right: 165px;
+//   padding-bottom: 60px;
+//   padding-left: 165px;
+
+//   background-color: inherit;
+//   min-width: 40px;
+//   border: none;
+// }
