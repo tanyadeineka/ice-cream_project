@@ -1,5 +1,6 @@
 .header{
-    // background-color: $olive-background;
+    background-color: $olive-background;
+    display: flex;
 }
 .header__logo{
     width: 40px;
@@ -12,4 +13,15 @@
         width: 60px;
         height: 65px;
     }
+}
+.wrap{
+    display: flex;
+    
+}
+.menu-button{
+    display: inline-block;
+    border: none;
+    background-color: rgb(255, 128, 0);
+
+  
 }
