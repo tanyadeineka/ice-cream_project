@@ -1,44 +1,116 @@
 <header class="header">
   <div class="container wrap">
-    <pictur class="header__logo">
+    <picture>
       <source
-        srcset="
-        ./images/logo-desk.png x1,
-        ./images/logo-desk-x2.png x2
-      "
+        srcset="./images/logo-desk.png x1, ./images/logo-desk-x2.png x2"
         media="(min-width: 1200px)"
       />
       <source
-        srcset="
-        ./images/logo-tab.png x1,
-        ./images/logo-tab-x2.png x2
-      "
+        srcset="./images/logo-tab.png x1, ./images/logo-tab-x2.png x2"
         media="(min-width: 768px)"
       />
       <source
-        srcset="
-        ./images/logo-mob.png x1,
-        ./images/logo-mob-x2.png x2
-      "
+        aria-sort="./images/logo-mob.png x1, ./images/logo-mob-x2.png x2"
         media="(max-width: 767px)"
       />
-      <img
-        class="header__logo"
-        src="./images/logo-mob.png"
-        alt="логотип"
-        width="40"
-      />
+      <img src="./images/logo-mob.png" alt="логотип" class="header__logo" />
     </picture>
-    
-    <button
+    <div class="centered-desk">
+      <button
       type="button"
       class="menu-button js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
     >
       <svg width="32" height="32" aria-label="Переключатель мобильного меню">
-        <use class="mobile-open__icon" href="./images/icons.svg#icon-menu"></use>
+        <use
+          class="mobile-open__icon"
+          href="./images/icons.svg#icon-menu"
+        ></use>
       </svg>
-    </button>         
+    </button>
+    <button data-modal-open type="button" class="modal-button">
+      Buy now
+      <svg
+        width="12"
+        height="12"
+        class="modal-button__icon"
+        aria-label="Переключатель мобильного меню"
+      >
+        <use class="" href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </div>
+    </button>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="wrap">
+        <picture>
+          <source
+            srcset="./images/logo-desk.png x1, ./images/logo-desk-x2.png x2"
+            media="(min-width: 1200px)"
+          />
+          <source
+            srcset="./images/logo-tab.png x1, ./images/logo-tab-x2.png x2"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="./images/logo-mob.png x1, ./images/logo-mob-x2.png x2"
+            media="(max-width: 767px)"
+          />
+          <img src="./images/logo-mob.png" alt="логотип" class="header__logo" />
+        </picture>
+        <button
+          type="button"
+          class="menu-button menu-button--cross js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="19"
+            height="19"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="mobile-close__icon"
+              href="./images/icons.svg#icon-close-black"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="centered">
+        <button data-modal-open type="button" class="mobile-menu__mod-btn">
+          Buy now
+          <svg
+            width="12"
+            height="12"
+            class="mobile-menu__icon"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use class="" href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </header>

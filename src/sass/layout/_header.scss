@@ -1,10 +1,12 @@
 .header{
     background-color: $olive-background;
-    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 .header__logo{
     width: 40px;
     height: 37px;
+    
     @media screen and (min-width: 768px) {
         width: 48px;
         height: 44px;
@@ -16,12 +18,142 @@
 }
 .wrap{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     
 }
+
 .menu-button{
     display: inline-block;
     border: none;
-    background-color: rgb(255, 128, 0);
-
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    @media screen and (min-width: 768px) {
+        margin-right: 32px;
+    }
+    
+}
+.menu-container {
+    padding-top: 12px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   
+    background-color: #85A279;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100vw;
+    height: 100vh;
+
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media screen and (min-width: 768px){
+        padding-top: 20px;
+        padding-left: 32px;
+        padding-right: 32px;
+        background-color: #97AF8D;
+    }
+}   
+    
+
+.menu-button--cross{
+    margin: 0;
+    width: 32px;
+    height: 32px;
+    fill: $white;
+    
+}
+.mobile-menu__link{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    color: $white;
+        &:hover,
+        &:focus {
+            color: $black;
+        }
+    @media screen and(min-width: 768px) {
+        font-size: 48px;
+        line-height: 1.23;
+    }
+}
+.mobile__logo{
+    width: 40px;
+    height: 37px;
+}
+.mobile-menu{
+    margin-top: 51px;
+    text-align: center;
+    margin-bottom: auto;
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+.centered{
+    margin: 0 auto;
+}
+.centered-desk{
+    display: flex;
+    align-items: center;
+}
+.mobile-menu__mod-btn{
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 152px;
+    height: 42px;
+    background-color: $yellow-primary;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1,21;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
+}
+.mobile-menu__icon{
+    position: absolute;
+    top: 35%;
+    right: 18%;
+    fill: transparent;
+    stroke: currentColor;
+}
+.modal-button {
+    position: relative;
+    display: inline-block;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 152px;
+    height: 42px;
+    background-color: $yellow-primary;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+}
+
+.modal-button__icon {
+    position: absolute;
+    top: 35%;
+    right: 18%;
+    fill: transparent;
+    stroke: currentColor;
 }
