@@ -1,5 +1,82 @@
+.section {
+  max-width: 1200px;
+  height: 1050px;
+  background-image: url(../images/4b-icecr-desk.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
 .products {
-    background-color: aqua;
-    width: 1600px;
+    padding: 60 15;
+}
+
+.products__lable {
+    font-weight: 800;
+        font-size: 30px;
+        line-height: 1.23;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
     
+        color: $black;
+}
+
+.products__title {
+    font-family: 'Seymour One';
+    font-size: 36px;
+        line-height: 1.25;
+           
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    
+        color: $black;
+}
+
+.product__list {
+    margin-top: 120px;
+}
+
+.product__item {
+width: 370px;
+height: 535px;
+}
+
+.product__thumb {
+
+    background: #AEC6A5;
+        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+        border-radius: 24px;
+    outline: 2px solid red;
+}
+
+.product__img {
+border-radius: 50%;
+}
+
+.product__list-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.23;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $black;
+}
+
+.product__list-text {
+    padding: 60px;
+    font-size: 16px;
+    line-height: 1.76;
+   
+
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: $black;
+}
+
+.product__button {
+    background: #2196f3;
 }
