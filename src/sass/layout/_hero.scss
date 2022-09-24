@@ -1,16 +1,39 @@
 .hero{
+position: relative;
     padding-top: 61px;
     max-width: 1600px;
-    height: 450px;
+    height: 502px;
     margin: 0 auto;
     background-color: $olive-background;
-    background-image: url(../images/hero-dots-mob.png);
+    
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
+    background-image: url(../images/hero-dots-mob.png);
+    @include retina {
+        background-image: url(../images/hero-dots-mob-x2.png);
+    }
+
+    @include tablet {
+        background-image: url(../images/hero-dots-tab.png);
+        @include retina {
+            background-image: url(../images/hero-dots-tab-x2.png);
+        }
+    }
+
+    @include desktop {
+        background-image: url(../images/hero-dots-desk.png);
+        @include retina {
+            background-image: url(../images/hero-dots-desk-x2.png);
+        }
+    }
 }
+
 .hero__position{
     width: 247px;
+        @media screen and (min-width: 768px) {
+            width: 181px;
+        }
 }
 .hero__title{
     font-family: 'Seymour One', sans-serif;
@@ -18,24 +41,102 @@
     line-height: 1.27;
     letter-spacing: 0.04em;
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.28;
+    }
 }
 .hero__word{
     font-size: 34px;
     line-height: 0.96;
+        @media screen and (min-width: 768px) {
+            font-size: 24px;
+            line-height: 0.55;
+        }
 }
 .hero__list{
     display: flex;
+    margin-top: 32px;
+        @media screen and (min-width: 768px) {
+            margin-top: 20px;
+        }
 }
 .hero__item:not(:last-child){
 
 }
 .hero__link{
-
+    display: inline-block;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $yellow-primary;
+    padding: 7px 10px;
+        &:hover{
+            color: #0A8817;
+        }
+        &:focus{
+            color: $white;
+        }
 }
-.hero__link--noborder{
-    
+.hero__link--border{
+    margin-right: 8px;
+    text-decoration: none;
+    color: $black;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    padding: 5px 10.5px;
+        &:hover {
+            border-color: #0A8817;
+            color: black;
+        }
+        
+        &:focus {
+            border-color: #0A8817;
+            color: $white;
+        }
 }
 .hero__ice{
+    position: absolute;
+    bottom: -53px;
+    right: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.benefits{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    display: flex;
+    flex-direction: column;
     
+}
+.benefits_item:not(:last-child){
+    margin-bottom: 20px;
+
+}
+.benefits_item{
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $black;
+}
+.benefits_text{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $white;
+    text-transform: none;
+  
     
+}
+.hero-center{
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+.hero__plate{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }

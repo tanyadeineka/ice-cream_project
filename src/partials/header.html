@@ -1,20 +1,20 @@
 <header class="header">
   <div class="container wrap">
-    <picture>
-      <source
-        srcset="./images/logo-desk.png x1, ./images/logo-desk-x2.png x2"
-        media="(min-width: 1200px)"
+    <div>
+      <img
+        srcset="
+          ./images/logo-mob.png      41w,
+          ./images/logo-mob-x2.png   81w,
+          ./images/logo-tab.png      48w,
+          ./images/logo-tab-x2.png   96w,
+          ./images/logo-desk.png     60w,
+          ./images/logo-desk-x2.png 120w
+        "
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 767px) 41px"
+        src="./images/logo-mob.png"
+        alt="logo"
       />
-      <source
-        srcset="./images/logo-tab.png x1, ./images/logo-tab-x2.png x2"
-        media="(min-width: 768px)"
-      />
-      <source
-        aria-sort="./images/logo-mob.png x1, ./images/logo-mob-x2.png x2"
-        media="(max-width: 767px)"
-      />
-      <img src="./images/logo-mob.png" alt="логотип" class="header__logo" />
-    </picture>
+    </div>
     <nav class="header-nav">
       <ul class="header-nav__list">
         <li class="header-nav__item"><a class="header-nav__link" href="#">Home</a></li>
@@ -51,21 +51,21 @@
     </button>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="wrap">
-        <picture>
-          <source
-            srcset="./images/logo-desk.png x1, ./images/logo-desk-x2.png x2"
-            media="(min-width: 1200px)"
+        <div>
+          <img
+            srcset="
+              ./images/logo-mob.png      41w,
+              ./images/logo-mob-x2.png   81w,
+              ./images/logo-tab.png      48w,
+              ./images/logo-tab-x2.png   96w,
+              ./images/logo-desk.png     60w,
+              ./images/logo-desk-x2.png 120w
+            "
+            sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 767px) 41px"
+            src="./images/logo-mob.png"
+            alt="logo"
           />
-          <source
-            srcset="./images/logo-tab.png x1, ./images/logo-tab-x2.png x2"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/logo-mob.png x1, ./images/logo-mob-x2.png x2"
-            media="(max-width: 767px)"
-          />
-          <img src="./images/logo-mob.png" alt="логотип" class="header__logo" />
-        </picture>
+        </div>
         <button
           type="button"
           class="menu-button menu-button--cross js-close-menu"

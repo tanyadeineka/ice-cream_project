@@ -1,22 +1,46 @@
 <section class="hero">
-  <div class="container">
+  <div class="container wrap hero-center">
     <div class="hero__position">
       <h1 class="hero__title">
         ice cream made with <span class="hero__word">passion</span>
       </h1>
       <ul class="hero__list">
-        <li class="hero__item"><a class="hero__link" href="#">Products</a></li>
         <li class="hero__item">
-          <a class="hero__link hero__link--noborder" href="#">How it’s made?</a>
+          <a class="hero__link hero__link--border" href="#">Products</a>
+        </li>
+        <li class="hero__item">
+          <a class="hero__link" href="#">How it’s made?</a>
         </li>
       </ul>
+      <div class="hero__plate">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </div>
     </div>
+    <ul class="benefits">
+      <li class="benefits_item">
+        <span>16</span>
+        <p class="benefits_text">cafes</p>
+      </li>
+      <li class="benefits_item">
+        <span>23</span>
+        <p class="benefits_text">food trucks</p>
+      </li>
+    </ul>
+  </div>
+  <div class="hero__ice">
     <img
+      srcset="
+        ./images/hero-icecream-mob.png      276w,
+        ./images/hero-icecream-mob-x2.png   551w,
+        ./images/hero-icecream-tab.png      379w,
+        ./images/hero-icecream-tab-x2.png   757w,
+        ./images/hero-icecream-desk.png     642w,
+        ./images/hero-icecream-desk-x2.png 1284w
+      "
+      sizes="(min-width: 1200px) 642px, (min-width: 768px) 379px, (max-width: 767px) 276px"
       src="./images/hero-icecream-mob.png"
-      class="hero__ice"
-      width="170"
-      height="219"
-      alt=""
+      alt="ice cream"
     />
   </div>
 </section>
