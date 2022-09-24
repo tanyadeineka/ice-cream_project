@@ -1,9 +1,11 @@
 .header{
+    position: relative;
+    z-index: 3;
     background-color: $olive-background;
     padding-top: 12px;
-    // padding-bottom: 12px;
-    // position: absolute;
-
+    @include tablet {
+        padding-top: 20px;
+    }
 }
 .wrap{
     display: flex;
