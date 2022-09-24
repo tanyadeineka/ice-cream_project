@@ -1,0 +1,167 @@
+.products-section {
+  max-width: 1200px;
+  height: 1050px;
+  padding: 60 15;
+  background-image: url(../images/4b-icecr-desk.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.products-section__container {
+  outline: 2px solid red;
+  margin-bottom: 120px;
+}
+
+.products-section__lable {
+  margin-bottom: 12px;
+
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.products-section__title {
+  font-family: 'Seymour One';
+
+  font-size: 36px;
+  line-height: 1.25;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.products {
+  outline: 4px solid rgb(255, 3, 3);
+}
+
+.products_list {
+  display: flex;
+}
+
+.products__item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+  outline: 2px solid rgb(241, 0, 161);
+}
+
+.products__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.products__img {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+}
+
+.products__item:hover {
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+}
+
+.products__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.23;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $black;
+}
+
+.products__text {
+  padding: 60px;
+
+  font-size: 16px;
+  line-height: 1.76;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: $black;
+}
+
+.products__container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+
+  height: 535px;
+  margin-top: 166px;
+  background: #aec6a5;
+  border-radius: 24px;
+  padding-top: 166px;
+
+  &:hover .products__button-icon {
+    fill: transparent;
+  }
+
+  &:hover .products__button-icon--hover {
+    fill: $black;
+  }
+
+  &:focus .products__button-icon--focus {
+    fill: $black;
+  }
+}
+
+.products__button {
+  position: relative;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40px;
+  height: 0;
+
+  bottom: 60px;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.products__button-icon {
+  display: block;
+  height: 14px;
+
+  width: 40px;
+
+  //   box-sizing: border-box;
+  //   border: 2px solid #131313;
+}
+
+.products__button-icon--hover {
+  fill: transparent;
+}
+
+.products__button-icon--focus {
+  fill: transparent;
+}
+
+.products__container--ice-coffee {
+  background: #efd478;
+}
+
+.products__container--milkshakes {
+  background: #d6936d;
+}
