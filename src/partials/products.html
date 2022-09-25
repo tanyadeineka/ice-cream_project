@@ -95,3 +95,102 @@
     </div>
   </div>
 </section>
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-container" data-modal-close>
+      <svg class="modal-container__cross">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
+    <p class="modal__text">Chololate icecream</p>
+    <img
+      class="modal__photo"
+      srcset="./images/modal-icecream.png 1x, ./images/modal-icecream-x2.png 2x"
+      src="./images/modal-icecream.png "
+      alt="мороженка"
+    />
+    <ul class="modal__kcpf-list">
+      <li class="modal__kcpf-item">
+        <div class="modal__kcpf">320</div>
+        kcal
+      </li>
+      <li class="modal__kcpf-item">
+        <div class="modal__kcpf">4g</div>
+        Protein...
+      </li>
+      <li class="modal__kcpf-item">
+        <div class="modal__kcpf">8,2g</div>
+        Fats
+      </li>
+      <li class="modal__kcpf-item">
+        <div class="modal__kcpf">40,4g</div>
+        Carbs
+      </li>
+    </ul>
+    <p class="modal__ingr">Ingredients</p>
+    <div class="modal__ingr-container">
+      <ul class="modal__ingr-list">
+        <li class="modal__ingr-item">
+          <p>Milk</p>
+          <p>100ml</p>
+        </li>
+        <li class="modal__ingr-item">
+          <p>Belgian chocolate</p>
+          <p>20g</p>
+        </li>
+        <li class="modal__ingr-item">
+          <p>Cream</p>
+          <p>150 ml</p>
+        </li>
+        <li class="modal__ingr-item">
+          <p>Cocoa powder</p>
+          <p>30g</p>
+        </li>
+        <li class="modal__ingr-item">
+          <p>Sugar</p>
+          <p>40g</p>
+        </li>
+        <li class="modal__ingr-item">
+          <p>Vanilla sugar</p>
+          <p>10g</p>
+        </li>
+      </ul>
+    </div>
+    <form class="modal-form">
+      <ul class="modal-list">
+        <li class="modal-list__item">
+          <label class="modal-list__lable">
+            <input
+              class="modal-list__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+          </label>
+        </li>
+        <li class="modal-list__item">
+          <label class="modal-list__lable">
+            <input
+              class="modal-list__input"
+              type="tel"
+              name="tel"
+              placeholder="Phone"
+            />
+          </label>
+        </li>
+        <li>
+          <label class="modal-list__lable">
+            <textarea
+              class="modal-list__textarea"
+              name="feedback"
+              rows="5"
+              placeholder="Comment"
+            ></textarea>
+          </label>
+        </li>
+      </ul>
+      <button class="modal-form__button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
