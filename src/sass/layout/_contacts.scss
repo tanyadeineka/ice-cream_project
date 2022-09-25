@@ -26,7 +26,7 @@
   height: 412px;
   width: 280px;
   background-color: $white;
-  margin-top: 20px;
+//   margin-top: 20px;
   padding: 40px 32px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -34,13 +34,13 @@
     width: 224px;
     height: 528px;
     padding: 40px 27px 40px 24px;
-    margin-top: 80px;
+    // margin-top: 80px;
   }
   @include desktop {
     width: 368px;
     height: 538px;
     padding: 40px 45px 40px 40px;
-    margin-top: 100px;
+    // margin-top: 100px;
   }
 }
 .cards__name {
