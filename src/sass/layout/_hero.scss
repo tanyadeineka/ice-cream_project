@@ -3,7 +3,6 @@
     padding-top: 61px;
     padding-bottom: 13px;
     max-width: 1600px;
-    // height: 502px;
     margin: 0 auto;
     background-color: $olive-background;
     
@@ -21,7 +20,7 @@
             background-image: url(../images/hero-dots-tab-x2.png);
         }
         padding-top: 40px;
-        // height: 415px;
+      
     }
 
     @include desktop {
@@ -31,7 +30,7 @@
         }
         padding-top: 45px;
         padding-bottom: 65px;
-        // height: 664px;
+   
     }
 }
 
@@ -81,7 +80,6 @@
     
         @media screen and (min-width: 768px) {
             margin-top: 20px;
-            // margin-bottom: 51px;
         }
         @media screen and (min-width: 1200px){
             margin-top: 28px;
@@ -153,9 +151,6 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-    // display: flex;
-    // flex-direction: column;
-    
 }
 .benefits_item:not(:last-child){
     margin-bottom: 20px;
@@ -197,23 +192,16 @@
     @media screen and (min-width: 1200px) {
         margin-bottom: 42px;
     }
-    // position: relative;
-    // align-items: baseline;
-    // flex-wrap: wrap;
 }
 .hero__plate{
     @media screen and (max-width: 767px) {
         display: none;
     }
     display: flex;
-    // position: relative; 
 }  
 .hero__img{
     margin-right: 33px;
-    // position: absolut;
-    // top: 16px;
     @media screen and (min-width: 1200px){
-        // top: 50px;
         margin-right: 15px;
     }
 }
