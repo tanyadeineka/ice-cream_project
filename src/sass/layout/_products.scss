@@ -153,8 +153,8 @@
     transform: translateY(-50%);
 
     display: inline-block;
-    width: 201px;
-    height: 211px;
+    min-width: 240px;
+    height: 240px;
     background-size: contain;
     background-image: url(../images/products-icecream-mob.png);
 
@@ -166,8 +166,8 @@
 
     background-repeat: no-repeat;
     @media screen and (min-width: 768px) {
-      width: 200px;
-      height: 208px;
+      min-width: 224px;
+      height: 224px;
 
       background-image: url(../images/products-icecream-tab.png);
 
@@ -179,8 +179,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 302px;
-      height: 317px;
+      min-width: 370px;
+      height: 370px;
 
       background-image: url(../images/products-icecream-desk.png);
 
@@ -212,8 +212,8 @@
     transform: translateY(-50%);
 
     display: inline-block;
-    min-width: 201px;
-    height: 211px;
+    min-width: 240px;
+    height: 240px;
     background-size: contain;
     background-position: center;
     background-image: url(../images/products-icecoffee-mob.png);
@@ -226,8 +226,8 @@
 
     background-repeat: no-repeat;
     @media screen and (min-width: 768px) {
-      width: 200px;
-      height: 208px;
+      min-width: 224px;
+      height: 224px;
 
       background-image: url(../images/products-icecoffee-tab.png);
 
@@ -239,8 +239,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 302px;
-      height: 317px;
+      min-width: 370px;
+      height: 370px;
 
       background-image: url(../images/products-icecoffee-desk.png);
 
@@ -268,8 +268,8 @@
     transform: translateY(-50%);
 
     display: inline-block;
-    width: 201px;
-    height: 211px;
+    min-width: 240px;
+    height: 240px;
     background-size: contain;
     background-image: url(../images/products-milkshake-mob.png);
 
@@ -281,8 +281,8 @@
 
     background-repeat: no-repeat;
     @media screen and (min-width: 768px) {
-      width: 200px;
-      height: 208px;
+      min-width: 224px;
+      height: 224px;
 
       background-image: url(../images/products-milkshake-tab.png);
 
@@ -294,8 +294,8 @@
     }
 
     @media screen and (min-width: 1200px) {
-      width: 302px;
-      height: 317px;
+      min-width: 370px;
+      height: 370px;
 
       background-image: url(../images/products-milkshake-desk.png);
 
