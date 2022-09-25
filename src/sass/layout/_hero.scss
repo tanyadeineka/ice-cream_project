@@ -1,5 +1,4 @@
 .hero{
-
     padding-top: 61px;
     padding-bottom: 13px;
     max-width: 1600px;
@@ -30,17 +29,15 @@
         }
         padding-top: 45px;
         padding-bottom: 65px;
-   
     }
 }
-
 .hero__position{
     width: 247px;
-        @media screen and (min-width: 768px) {
+        @include tablet {
             width: 181px;
 
         }
-        @media screen and (min-width: 1200px) {
+        @include desktop {
             width: 367px;
         }
 }
@@ -50,11 +47,12 @@
     line-height: 1.27;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    @media screen and (min-width: 768px) {
+
+    @include tablet {
         font-size: 18px;
         line-height: 1.28;
     }
-    @media screen and (min-width: 1200px){
+    @include desktop{
         font-size: 38px;
         line-height: 1.27;
     }
@@ -62,11 +60,11 @@
 .hero__word{
     font-size: 34px;
     line-height: 0.96;
-        @media screen and (min-width: 768px) {
+        @include tablet {
             font-size: 24px;
             line-height: 0.55;
         }
-        @media screen and (min-width: 1200px){
+        @include desktop{
             font-size: 38px;
         }
 }
@@ -78,10 +76,10 @@
         padding-bottom: 239px;
     }
     
-        @media screen and (min-width: 768px) {
+        @include tablet {
             margin-top: 20px;
         }
-        @media screen and (min-width: 1200px){
+        @include desktop {
             margin-top: 28px;
         }
 }
@@ -94,13 +92,14 @@
     padding: 7px 10px;
     align-items: center;
     justify-content: center;
+    transition: color 250ms ease-in-out;
         &:hover{
             color: #0A8817;
         }
         &:focus{
             color: $white;
         }
-    @media screen and (min-width: 1200px){
+    @include desktop {
         font-size: 14px;
         line-height: 1.21;
         width: 154px;
@@ -114,6 +113,7 @@
     border: 2px solid #F8D24E;
     border-radius: 8px;
     padding: 5px 10.5px;
+    transition: color 250ms ease-in-out;
         &:hover {
             border-color: #0A8817;
             color: black;
@@ -123,7 +123,7 @@
             border-color: #0A8817;
             color: $white;
         }
-        @media screen and (min-width: 1200px){
+        @include desktop {
             width: 134px;
             height: 42px;
         }
@@ -137,8 +137,9 @@
     bottom: -56px;
     right: 8px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
     @include tablet {
-        bottom: -74px;
+        bottom: -72px;
         right: 48px;
            
     }
@@ -164,6 +165,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: $black;
+
     @include desktop {
         font-size: 46px;
         line-height: 1.22;
@@ -177,6 +179,7 @@
     letter-spacing: 0em;
     color: $white;
     text-transform: none;
+
     @include desktop {
         font-size: 14px;
         line-height: 1.21;
@@ -186,10 +189,12 @@
 .hero-center{
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: 768px){
+
+    @include tablet{
         margin-bottom: 28px;
     }
-    @media screen and (min-width: 1200px) {
+
+    @include desktop {
         margin-bottom: 42px;
     }
 }
@@ -201,7 +206,8 @@
 }  
 .hero__img{
     margin-right: 33px;
-    @media screen and (min-width: 1200px){
+
+    @include desktop {
         margin-right: 15px;
     }
 }
@@ -212,16 +218,62 @@
     color: $white;
     width: 151px;
     padding-top: 28px;
-    @media screen and (min-width: 1200px){
+
+    @include desktop {
         font-size: 14px;
         width: 200px;
         padding-top: 70px;
     }
-    
 }
-.hero__arrow {
-    fill: $white;
+.hero__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
     margin-top: 13px;
-    
+    width: 70px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: fill 250ms ease-in-out;
+
+    &:hover .hero__button-icon--default,
+    &:focus .hero__button-icon--default {
+        fill: transparent;
+    }
+
+    &:hover .hero__button-icon--hover {
+        fill: $white;
+    }
+
+    &:hover .hero__button-icon--focus {
+        fill: transparent;
+    }
+    &:focus .hero__button-icon--hover {
+        fill: transparent;
+    }
+    &:focus .hero__button-icon--focus {
+        fill: $white;
+    }
 }
+.hero__button-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+.hero__button-icon--hover {
+    fill: transparent;
+    width: 52px;
+    height: 24px;
+}
+.hero__button-icon--focus {
+    fill: transparent;
+    width: 52px;
+    height: 24px;
+}
+.hero__button-icon{
+    fill: $white;
+}
+
 
