@@ -1,7 +1,8 @@
 .header{
-    position: relative;
+    position: absolute;
+    width: 100%;
     z-index: 3;
-    background-color: $olive-background;
+    // background-color: $olive-background;
     margin: 0 auto;
     padding-top: 12px;
     @include tablet {
