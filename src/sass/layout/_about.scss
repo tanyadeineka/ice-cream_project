@@ -92,10 +92,16 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 463px;
   padding-bottom: 42px;
   @include tablet {
     justify-content: flex-start;
     gap: 48px;
+  }
+  @include desktop {
+    flex-direction: column;
+    justify-content: center;
+    gap: 100px;
   }
 }
 .description-item {
@@ -112,8 +118,8 @@
     padding-right: 0;
   }
   @include desktop {
-    font-style: 14px;
-    line-height: calc(27 / 12);
+    font-size: 16px;
+    line-height: calc(28 / 16);
   }
 }
 .description-item:not(:last-of-type) {
