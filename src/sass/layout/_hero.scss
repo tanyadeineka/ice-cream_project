@@ -1,0 +1,279 @@
+.hero{
+    padding-top: 61px;
+    padding-bottom: 13px;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $olive-background;
+    
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    background-image: url(../images/hero-dots-mob.png);
+    @include retina {
+        background-image: url(../images/hero-dots-mob-x2.png);
+    }
+
+    @include tablet {
+        background-image: url(../images/hero-dots-tab.png);
+        @include retina {
+            background-image: url(../images/hero-dots-tab-x2.png);
+        }
+        padding-top: 40px;
+      
+    }
+
+    @include desktop {
+        background-image: url(../images/hero-dots-desk.png);
+        @include retina {
+            background-image: url(../images/hero-dots-desk-x2.png);
+        }
+        padding-top: 45px;
+        padding-bottom: 65px;
+    }
+}
+.hero__position{
+    width: 247px;
+        @include tablet {
+            width: 181px;
+
+        }
+        @include desktop {
+            width: 367px;
+        }
+}
+.hero__title{
+    font-family: 'Seymour One', sans-serif;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    @include tablet {
+        font-size: 18px;
+        line-height: 1.28;
+    }
+    @include desktop{
+        font-size: 38px;
+        line-height: 1.27;
+    }
+}
+.hero__word{
+    font-size: 34px;
+    line-height: 0.96;
+        @include tablet {
+            font-size: 24px;
+            line-height: 0.55;
+        }
+        @include desktop{
+            font-size: 38px;
+        }
+}
+.hero__list{
+    display: flex;
+    margin-top: 32px;
+    
+    @media screen and(max-width: 767px){
+        padding-bottom: 239px;
+    }
+    
+        @include tablet {
+            margin-top: 20px;
+        }
+        @include desktop {
+            margin-top: 28px;
+        }
+}
+.hero__link{
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.25;
+    color: $yellow-primary;
+    padding: 7px 10px;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms ease-in-out;
+        &:hover{
+            color: #0A8817;
+        }
+        &:focus{
+            color: $white;
+        }
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.21;
+        width: 154px;
+        height: 40px;
+    }
+}
+.hero__link--border{
+    margin-right: 8px;
+    text-decoration: none;
+    color: $black;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+    padding: 5px 10.5px;
+    transition: color 250ms ease-in-out;
+        &:hover {
+            border-color: #0A8817;
+            color: black;
+        }
+        
+        &:focus {
+            border-color: #0A8817;
+            color: $white;
+        }
+        @include desktop {
+            width: 134px;
+            height: 42px;
+        }
+}
+.ice{
+    position: relative;
+}
+.hero__ice{
+    
+    position: absolute;
+    bottom: -56px;
+    right: 8px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+    @include tablet {
+        bottom: -72px;
+        right: 48px;
+           
+    }
+    @include desktop{
+        bottom: -165px;
+        right: 0;
+    }
+}
+.benefits{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+.benefits_item:not(:last-child){
+    margin-bottom: 20px;
+
+}
+.benefits_item{
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+    text-align: right;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $black;
+
+    @include desktop {
+        font-size: 46px;
+        line-height: 1.22;
+
+    }
+}
+.benefits_text{
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.25;
+    letter-spacing: 0em;
+    color: $white;
+    text-transform: none;
+
+    @include desktop {
+        font-size: 14px;
+        line-height: 1.21;
+    
+    }
+}
+.hero-center{
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet{
+        margin-bottom: 28px;
+    }
+
+    @include desktop {
+        margin-bottom: 42px;
+    }
+}
+.hero__plate{
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    display: flex;
+}  
+.hero__img{
+    margin-right: 33px;
+
+    @include desktop {
+        margin-right: 15px;
+    }
+}
+.hero__text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.4;
+    color: $white;
+    width: 151px;
+    padding-top: 28px;
+
+    @include desktop {
+        font-size: 14px;
+        width: 200px;
+        padding-top: 70px;
+    }
+}
+.hero__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 13px;
+    width: 70px;
+    height: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    transition: fill 250ms ease-in-out;
+
+    &:hover .hero__button-icon--default,
+    &:focus .hero__button-icon--default {
+        fill: transparent;
+    }
+
+    &:hover .hero__button-icon--hover {
+        fill: $white;
+    }
+
+    &:hover .hero__button-icon--focus {
+        fill: transparent;
+    }
+    &:focus .hero__button-icon--hover {
+        fill: transparent;
+    }
+    &:focus .hero__button-icon--focus {
+        fill: $white;
+    }
+}
+.hero__button-icon {
+    max-width: 100%;
+    max-height: 100%;
+}
+.hero__button-icon--hover {
+    fill: transparent;
+    width: 52px;
+    height: 24px;
+}
+.hero__button-icon--focus {
+    fill: transparent;
+    width: 52px;
+    height: 24px;
+}
+.hero__button-icon{
+    fill: $white;
+}
+
+
