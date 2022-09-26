@@ -1,12 +1,10 @@
 .hero{
     padding-top: 61px;
     padding-bottom: 13px;
-    max-width: 1600px;
     margin: 0 auto;
     background-color: $olive-background;
     
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: bottom;
     background-image: url(../images/hero-dots-mob.png);
     @include retina {
