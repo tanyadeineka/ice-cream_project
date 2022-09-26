@@ -1,21 +1,20 @@
 .cards {
-    background-color: $olive-background;
-    .container {
-        display: flex;
-        justify-content: center;
-        position: relative;
-        padding-top: 1098px;
-        @include tablet {
-            padding-top: 400px;
-        }
-        @include desktop {
-            padding-top: 650px;
-        }
+  background-color: $olive-background;
+  .container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-top: 1098px;
+    @include tablet {
+      padding-top: 400px;
     }
+    @include desktop {
+      padding-top: 650px;
+    }
+  }
 }
-.cards__content
- {
-    position: absolute;
+.cards__content {
+  position: absolute;
   top: -345px;
   @include tablet {
     top: -291px;
@@ -43,7 +42,7 @@
   height: 412px;
   width: 280px;
   background-color: $white;
-//   margin-top: 20px;
+  //   margin-top: 20px;
   padding: 40px 32px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -240,6 +239,16 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
+  transition: background-color 250ms linear, transform 400ms ease-in-out;
+
+  &:hover {
+    background-color: #0a8817;
+  }
+
+  &:focus {
+    background-color: #0a8817;
+    color: #fcfcfc;
+  }
   @include tablet {
     margin-bottom: 0;
     margin-right: 16px;
@@ -261,6 +270,16 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
+  transition: background-color 250ms linear, transform 400ms ease-in-out;
+
+  &:hover {
+    border-color: #0a8817;
+  }
+
+  &:focus {
+    border-color: #0a8817;
+    color: #fcfcfc;
+  }
   @include tablet {
     height: 42px;
     margin-left: 0;

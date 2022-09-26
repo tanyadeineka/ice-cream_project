@@ -1,5 +1,4 @@
 .products-section {
-  max-width: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url(../images/products-bg-mob.jpg);
@@ -24,7 +23,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1200px;
     background-image: url(../images/4b-icecr-desk.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -329,6 +327,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 166px;
+    padding-bottom: 65px;
 
     font-size: 30px;
     line-height: 1.23;
@@ -369,12 +368,14 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   width: 70px;
   height: 20px;
 
   margin-top: auto;
   margin-bottom: 20px;
+
   border: none;
   outline: none;
   background-color: transparent;
@@ -404,10 +405,10 @@
   }
 }
 
-.products__button-icon {
-  max-width: 100%;
-  max-height: 100%;
-}
+// .products__button-icon {
+//   max-width: 100%;
+//   max-height: 100%;
+// }
 
 .products__button-icon--hover {
   fill: transparent;
