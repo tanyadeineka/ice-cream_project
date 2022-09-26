@@ -1,0 +1,191 @@
+<header class="header">
+  <div class="container wrap">
+    <div>
+      <img
+        srcset="
+          ./images/logo-mob.png      41w,
+          ./images/logo-mob-x2.png   81w,
+          ./images/logo-tab.png      48w,
+          ./images/logo-tab-x2.png   96w,
+          ./images/logo-desk.png     60w,
+          ./images/logo-desk-x2.png 120w
+        "
+        sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 767px) 41px"
+        src="./images/logo-mob.png"
+        alt="logo"
+      />
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="./index.html">Home</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#">How it’s made?</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#products-section">Our products</a>
+        </li>
+        <li class="header-nav__item">
+          <a class="header-nav__link" href="#cards">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="centered-desk">
+      <button
+        type="button"
+        class="burger-button js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32" height="32" aria-label="Mobile menu switch">
+          <use
+            class="mobile-open__icon"
+            href="./images/icons.svg#icon-menu"
+          ></use>
+        </svg>
+      </button>
+      <button data-modal-open type="button" class="header__modal">
+        Buy now
+        <svg
+          width="12"
+          height="12"
+          class="header__icon"
+          aria-label="Mobile menu switch"
+        >
+          <use class="" href="./images/icons.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="wrap">
+        <div>
+          <img
+            srcset="
+              ./images/logo-mob.png      41w,
+              ./images/logo-mob-x2.png   81w,
+              ./images/logo-tab.png      48w,
+              ./images/logo-tab-x2.png   96w,
+              ./images/logo-desk.png     60w,
+              ./images/logo-desk-x2.png 120w
+            "
+            sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (max-width: 767px) 41px"
+            src="./images/logo-mob.png"
+            alt="logo"
+          />
+        </div>
+        <button
+          type="button"
+          class="burger-button burger-button--cross js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="19" height="19" aria-label="Mobile menu switch">
+            <use
+              class="mobile-close__icon"
+              href="./images/icons.svg#icon-close-black"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__link--current"
+            href="./index.html"
+            >Home</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a
+            class="mobile-menu__link mobile-menu__link--current"
+            href="#products-section"
+            >Our products</a
+          >
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link mobile-menu__link--current" href="#cards"
+            >Contact</a
+          >
+        </li>
+      </ul>
+      <div class="centered">
+        <button data-mobile-open type="button" class="mobile-menu__mod-btn">
+          Buy now
+          <svg
+            width="12"
+            height="12"
+            class="mobile-menu__icon"
+            aria-label="Mobile menu switch"
+          >
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop-header is-hidden" data-modal>
+    <div class="modal-header modal-header-container">
+      <h2 class="modal-title">Buy now</h2>
+      <ul class="modal-products-list">
+        <li class="modal-product-item modal-product-item-icecream">
+          <h3 class="modal-product-title">ice cream</h3>
+        </li>
+        <li class="modal-product-item modal-product-item-icecoffee">
+          <h3 class="modal-product-title">ice coffee</h3>
+        </li>
+        <li class="modal-product-item modal-product-item-milkshake">
+          <h3 class="modal-product-title">milkshake</h3>
+        </li>
+      </ul>
+      <form class="modal-form">
+        <ul class="modal-list">
+          <li class="modal-item">
+            <label class="modal-lable">
+              <input
+                class="modal-input"
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </label>
+          </li>
+          <li class="modal-item">
+            <label class="modal-lable">
+              <input
+                class="modal-input"
+                type="tel"
+                name="tel"
+                placeholder="Phone"
+              />
+            </label>
+          </li>
+          <li>
+            <label class="modal-lable">
+              <textarea
+                class="modal-textarea"
+                name="feedback"
+                rows="5"
+                placeholder="Comment"
+              ></textarea>
+            </label>
+          </li>
+        </ul>
+        <button class="modal-button" type="submit">Submit</button>
+      </form>
+      <button data-modal-close type="button" class="modal__close">
+        <svg width="20" height="20" aria-label="Mobile menu switch">
+          <use
+            class="modal__icon"
+            href="./images/icons.svg#icon-close-black"
+          ></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
