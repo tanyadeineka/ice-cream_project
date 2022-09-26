@@ -1,9 +1,12 @@
 .about-section {
   background-color: $olive-background;
+  margin: 0 auto;
   max-width: 1600px;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
   @include tablet {
     padding-bottom: 204px;
   }
@@ -65,6 +68,7 @@
   width: 100%;
   max-width: 100%;
   height: auto;
+  padding: 0;
 }
 .cow-image {
   min-width: 280px;
@@ -89,23 +93,30 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 42px;
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    justify-content: flex-start;
+    gap: 48px;
   }
 }
+.description-list {
+  @include tablet {
 
+  }
+}
 .description-item {
   font-weight: 400;
   font-size: 12px;
   line-height: calc(21 / 12);
   letter-spacing: 0.04em;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
   @include tablet {
     text-align: start;
+    padding-left: 0;
+    padding-right: 0;
   }
   @include desktop {
     font-style: 14px;
@@ -114,7 +125,10 @@
 }
 .description-item:not(:last-of-type) {
     margin-bottom: 8px;
-  }
+}
+.description-item:last-of-type {
+  margin-bottom: 20px;
+}
 .btn-cow {
   border: none;
   border-radius: 10px;
@@ -142,23 +156,54 @@
   fill: transparent;
   stroke: currentColor;
 }
+
+.features-icon {
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
 .features-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  @include tablet {
+    display: flex;
+    gap: 80px;
+  }
 }
 .features-item {
-  display: flex;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 160px) / 3);
+  }
 }
 .features-number {
   font-weight: 700;
-  font-size: 58px;
-  line-height: calc(71 / 58);
+  font-size: 36px;
+  line-height: calc(42 / 36);
   letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  @include tablet {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+  @include desktop {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: calc(71 / 58);
+  }
 }
 .features-descr {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(28 / 16);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
   letter-spacing: 0.02em;
+  @include tablet {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
 }
