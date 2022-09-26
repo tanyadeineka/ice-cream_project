@@ -1,12 +1,10 @@
 .hero{
-    padding-top: 61px;
+    padding-top: calc(61px + 57px);
     padding-bottom: 13px;
-    max-width: 1600px;
     margin: 0 auto;
     background-color: $olive-background;
     
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: bottom;
     background-image: url(../images/hero-dots-mob.png);
     @include retina {
@@ -18,7 +16,7 @@
         @include retina {
             background-image: url(../images/hero-dots-tab-x2.png);
         }
-        padding-top: 40px;
+        padding-top: calc(40px + 72px);
       
     }
 
@@ -27,7 +25,7 @@
         @include retina {
             background-image: url(../images/hero-dots-desk-x2.png);
         }
-        padding-top: 45px;
+        padding-top: calc(45px + 65px);
         padding-bottom: 65px;
     }
 }
