@@ -2,24 +2,18 @@
     <p class="about-pretitle">TRADITION AND LOVE</p>
     <h2 class="about-title">HOW IT'S MADE</h2>
     <div class="about-cow">
-        <picture class="cow-image about-cow-item">
-            <source
-                srcset="./images/cow-desk.png 1x, ./images/cow-desk-2x.png 2x"
-                media="(min-width: 1200px)"
-            />
-            <source
-                srcset="./images/cow-tab.png 1x, ./images/cow-tab-2x.png 2x"
-                media="(min-width: 768px)"
-            />
-            <source
-                srcset="./images/cow-mob.png 1x, ./images/cow-mob-2x.png 2x"
-                media="(min-width: 320px)"
-            />
+        <div class="cow-image about-cow-item">
             <img 
+                srcset="./images/cow-mob.png 280w,
+                        ./images/cow-mob-2x.png 560w,
+                        ./images/cow-tab.png 336w,
+                        ./images/cow-tab-2x.png 672w,
+                        ./images/cow-desk.png 500w,
+                        ./images/cow-desk-2x.png 1000w"
                 sizes="(min-width: 1200px) 500px, (min-width: 768px) 336px"
                 src="./images/cow-desk.png" 
-                alt="Корова">
-        </picture>
+                alt="Cow">
+        </div>
         <div class="about-cow-description about-cow-item">
             <ul class="description-list">
                 <li class="description-item">
@@ -32,7 +26,12 @@
                     <p>This is enough to choose ice cream and coffee for any mood!</p>
                 </li>
             </ul>
-            <button type="button">Read more</button>
+            <button type="button" class="btn-cow">
+                Read more
+                <svg width="12" height="12" class="cow-icon">
+                    <use class="" href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+            </button>
         </div>     
     </div>
     <div>

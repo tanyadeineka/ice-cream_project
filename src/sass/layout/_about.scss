@@ -94,3 +94,21 @@
     line-height: calc(27 / 12);
   }
 }
+.btn-cow {
+  border: none;
+  border-radius: 10px;
+  color: $black;
+  background-color: $yellow-primary;
+  width: 164px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+    &:hover{
+      background-color: #0A8817;
+        }
+    &:focus{
+      background-color: #0A8817;
+      color: #FCFCFC;
+        }
+}
