@@ -59,8 +59,13 @@
     gap: 100px;
   }
 }
+.cow-image > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 .cow-image {
-  width: 280px;
+  min-width: 280px;
   margin-bottom: 40px;
   display: block;
   @include tablet {
