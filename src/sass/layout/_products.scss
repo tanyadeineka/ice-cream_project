@@ -327,6 +327,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 166px;
+    padding-bottom: 65px;
 
     font-size: 30px;
     line-height: 1.23;
@@ -367,12 +368,14 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 
   width: 70px;
   height: 20px;
 
   margin-top: auto;
   margin-bottom: 20px;
+
   border: none;
   outline: none;
   background-color: transparent;
@@ -402,10 +405,10 @@
   }
 }
 
-.products__button-icon {
-  max-width: 100%;
-  max-height: 100%;
-}
+// .products__button-icon {
+//   max-width: 100%;
+//   max-height: 100%;
+// }
 
 .products__button-icon--hover {
   fill: transparent;
