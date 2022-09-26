@@ -95,7 +95,7 @@
     text-align: center;
   }
 }
-.description-list {}
+
 .description-item {
   font-weight: 400;
   font-size: 12px;
@@ -104,9 +104,6 @@
   text-align: center;
   padding-left: 50px;
   padding-right: 50px;
-  &:not(last-of-type) {
-    margin-bottom: 8px;
-  }
   @include tablet {
     text-align: start;
   }
@@ -115,6 +112,9 @@
     line-height: calc(27 / 12);
   }
 }
+.description-item:not(:last-of-type) {
+    margin-bottom: 8px;
+  }
 .btn-cow {
   border: none;
   border-radius: 10px;
