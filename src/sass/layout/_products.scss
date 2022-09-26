@@ -387,12 +387,12 @@
   &:hover .products__button-icon--default,
   &:focus .products__button-icon--default {
     fill: transparent;
-    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+    // transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover .products__button-icon--hover {
     fill: $black;
-    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms fill ease-in;
   }
 
   &:hover .products__button-icon--focus {
@@ -404,7 +404,7 @@
 
   &:focus .products__button-icon--focus {
     fill: $black;
-    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 300ms fill ease-in;
   }
 }
 
