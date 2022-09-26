@@ -1,17 +1,22 @@
 .about-section {
   background-color: $olive-background;
-  margin: 0 auto;
-  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   padding-top: 60px;
   padding-bottom: 60px;
   padding-left: 32px;
   padding-right: 32px;
+  @include mobile {
+    width: 480px;
+  }
   @include tablet {
     padding-bottom: 204px;
+    width: 768px;
   }
   @include desktop {
     padding-bottom: 180px;
+    width: 1200px;
   }
 }
 .about-pretitle {
@@ -98,11 +103,6 @@
   @include tablet {
     justify-content: flex-start;
     gap: 48px;
-  }
-}
-.description-list {
-  @include tablet {
-
   }
 }
 .description-item {
