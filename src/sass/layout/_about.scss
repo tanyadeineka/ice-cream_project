@@ -1,0 +1,209 @@
+.about-section {
+  background-color: $olive-background;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 32px;
+  padding-right: 32px;
+  @include mobile {
+    width: 480px;
+  }
+  @include tablet {
+    padding-bottom: 204px;
+    width: 768px;
+  }
+  @include desktop {
+    padding-bottom: 180px;
+    width: 1200px;
+  }
+}
+.about-pretitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.04em;
+  text-align: center;
+  margin-bottom: 12px;
+  @include tablet {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: calc(37 / 30);
+    text-align: center;
+  }
+}
+.about-title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding-left: 56px;
+  padding-right: 64px;
+  margin-bottom: 32px;
+  @include tablet {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+    letter-spacing: 0.06em;
+    margin-bottom: 72px;
+  }
+  @include desktop {
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: 0.06em;
+    margin-bottom: 82px;
+  }
+}
+.about-cow {
+  @include tablet {
+    display: flex;
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 100px;
+  }
+}
+.cow-image > img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+.cow-image {
+  min-width: 280px;
+  margin-bottom: 40px;
+  display: block;
+  @include tablet {
+    width: 336px;
+  }
+  @include desktop {
+    width: 500px;
+  }
+}
+.about-cow-item {
+  @include tablet {
+    width: calc((100% - 32px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 100px) / 2);
+  }
+}
+.about-cow-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 42px;
+  @include tablet {
+    justify-content: flex-start;
+    gap: 48px;
+  }
+}
+.description-item {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(21 / 12);
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  @include tablet {
+    text-align: start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  @include desktop {
+    font-style: 14px;
+    line-height: calc(27 / 12);
+  }
+}
+.description-item:not(:last-of-type) {
+    margin-bottom: 8px;
+}
+.description-item:last-of-type {
+  margin-bottom: 20px;
+}
+.btn-cow {
+  border: none;
+  border-radius: 10px;
+  color: $black;
+  background-color: $yellow-primary;
+  width: 164px;
+  height: 42px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  cursor: pointer;
+  display: block;
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+    &:hover{
+      background-color: #0A8817;
+        }
+    &:focus{
+      background-color: #0A8817;
+      color: #FCFCFC;
+        }
+}
+.cow-icon {
+  margin-left: 6px;
+  align-items: center;
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.features-icon {
+  margin: 0 auto;
+  margin-bottom: 22px;
+}
+.features-list {
+  @include tablet {
+    display: flex;
+    gap: 80px;
+  }
+}
+.features-item {
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 160px) / 3);
+  }
+}
+.features-number {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  @include tablet {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: calc(59 / 48);
+  }
+  @include desktop {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: calc(71 / 58);
+  }
+}
+.features-descr {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+  letter-spacing: 0.02em;
+  @include tablet {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+}
