@@ -1,3 +1,17 @@
+.reviews {
+  .container {
+    padding-bottom: 394px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 383px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 206px;
+    }
+  }
+}
+
 .reviews__list {
     margin-bottom: 32px;
 }
