@@ -1,11 +1,27 @@
-
-.cards__content {
-  margin-top: -345px;
+.cards {
+    background-color: $olive-background;
+    .container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-top: 1098px;
+        @include tablet {
+            padding-top: 400px;
+        }
+        @include desktop {
+            padding-top: 650px;
+        }
+    }
+}
+.cards__content
+ {
+    position: absolute;
+  top: -345px;
   @include tablet {
-    margin-top: -291px;
+    top: -291px;
   }
   @include desktop {
-    margin-top: -90px;
+    top: -90px;
   }
 }
 
@@ -13,6 +29,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
   @include tablet {
     flex-direction: row;
     gap: 16px;
@@ -198,13 +215,13 @@
   }
   @include tablet {
     margin-top: 60px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: center;
   }
   @include desktop {
     margin-top: 64px;
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 }
 .cards__button-first {
