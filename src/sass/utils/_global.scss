@@ -1,12 +1,13 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: $white;
+    cursor: url(../images/cursor.png) 24 33, auto;
 }
 img{
     display: block;
-    //width: 100%;
-    //max-width: 100%;
-    //height: auto;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 .visually-hidden {
     position: absolute;
