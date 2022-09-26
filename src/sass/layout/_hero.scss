@@ -96,6 +96,8 @@
         }
         &:focus{
             color: $white;
+            outline: 1px solid #f8d24e;
+            border-radius: 5px;
         }
     @include desktop {
         font-size: 14px;
@@ -254,6 +256,8 @@
     }
     &:focus .hero__button-icon--focus {
         fill: $white;
+        outline: 1px solid #f8d24e;
+        border-radius: 5px;
     }
 }
 .hero__button-icon {
