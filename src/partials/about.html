@@ -39,7 +39,7 @@
             <p>This is enough to choose ice cream and coffee for any mood!</p>
           </li>
         </ul>
-        <button type="button" class="btn-cow">
+        <button type="button" class="btn-cow" data-cow-open>
           Read more
           <svg width="12" height="12" class="cow-icon">
             <use href="./images/icons.svg#icon-arrow"></use>
@@ -89,6 +89,20 @@
           </p>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="backdrop-cow is-hidden" data-modal-cow>
+    <div class="modal-cow">
+      <button class="modal-cow-btn" type="button" data-cow-close>
+        <svg width="16" height="16" class="cow-close">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <p class="modal-cow-title">How it's made?</p>
+      <div class="thumb-video">
+        <iframe width="100%" height="205px" src="https://www.youtube.com/embed/VdEa6wKl7Dc" title="Happy cow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="modal-cow-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
     </div>
   </div>
 </section>
