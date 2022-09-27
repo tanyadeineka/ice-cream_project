@@ -8,6 +8,13 @@
         padding-top: 20px;
     }
 }
+.header__logo{
+    position: relative;
+    bottom: 7px;
+    // @include desktop{
+    //     bottom: 10px;
+    // }
+}
 .wrap{
     display: flex;
     align-items: center;
