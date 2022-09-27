@@ -86,6 +86,10 @@
   source,
   img {
     height: 100%;
+    width: 100%;
     object-fit: cover;
   }
+}
+.swiper-pagination > span{
+background-color: $olive-background;
 }

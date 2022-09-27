@@ -326,7 +326,7 @@
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 166px;
+    padding-top: 185px;
     padding-bottom: 65px;
 
     font-size: 30px;
@@ -387,10 +387,12 @@
   &:hover .products__button-icon--default,
   &:focus .products__button-icon--default {
     fill: transparent;
+    // transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &:hover .products__button-icon--hover {
     fill: $black;
+    transition: 300ms fill ease-in;
   }
 
   &:hover .products__button-icon--focus {
@@ -402,6 +404,7 @@
 
   &:focus .products__button-icon--focus {
     fill: $black;
+    transition: 300ms fill ease-in;
   }
 }
 
@@ -520,7 +523,7 @@
 
 .modal__text {
   margin-bottom: 16px;
-
+  text-align: center;
   font-family: 'Seymour One';
   font-size: 20px;
   line-height: 1.4;
