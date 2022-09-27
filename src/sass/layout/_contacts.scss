@@ -272,7 +272,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-  transition: background-color 250ms linear, transform 400ms ease-in-out;
+  transition: border-color 250ms linear, transform 400ms ease-in-out, color 250ms linear, transform 400ms ease-in-out;
 
   &:hover {
     border-color: #0a8817;
