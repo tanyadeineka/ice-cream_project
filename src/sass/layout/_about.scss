@@ -169,10 +169,18 @@
 }
 .features-item {
   text-align: center;
+  
   @include tablet {
+    
     display: flex;
     flex-direction: column;
     width: calc((100% - 160px) / 3);
+  }
+}
+.features-item:not(:last-child){
+  margin-bottom: 28px;
+  @include tablet {
+    margin-bottom: 0;
   }
 }
 .features-number {
