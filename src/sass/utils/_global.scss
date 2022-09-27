@@ -3,6 +3,10 @@ body {
     color: $white;
     cursor: url(../images/cursor.png) 24 18, auto;
 }
+body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
+}
 img{
     display: block;
     //width: 100%;
