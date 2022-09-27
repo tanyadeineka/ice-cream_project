@@ -471,13 +471,13 @@
   border-radius: 10px;
   background-color: #fcfcfc;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     max-width: 280px;
     max-height: 990px;
     padding: 28px 20px 32px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     max-width: 568px;
     max-height: 995px;
     padding: 32px 40px;
