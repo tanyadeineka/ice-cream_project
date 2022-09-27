@@ -113,7 +113,7 @@
     border: 2px solid #F8D24E;
     border-radius: 8px;
     padding: 5px 10.5px;
-    transition: color 250ms ease-in-out;
+    transition: color 250ms ease-in-out, border-color 250ms ease-in-out;
         &:hover {
             border-color: #0A8817;
             color: black;
